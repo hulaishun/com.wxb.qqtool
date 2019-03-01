@@ -1,0 +1,147 @@
+// 酷Q 的Json文件支持以 // 开头的注释。
+// 打包前，应用的 .dll, .json 的文件名须以appid命名，应用AppInfo返回的内容须改为appid
+// 如 appid=com.example.demo, 则dll及json文件需分别命名为 com.example.demo.dll、com.example.demo.json
+{
+  "ret": 1, // 返回码，固定为1
+  "apiver": 9, // Api版本，本SDK为9
+  "name": "Qq辅助工具", // 应用名称
+  "version": "1.0.24", // 应用版本
+  "version_id": 24, // 应用顺序版本（每次发布时至少+1）
+  "author": "胡来顺", // 应用作者
+  "description": "Qq辅助工具", //一句话描述插件用途
+  "event": [
+    // 事件列表，同一事件类型可重复定义（发布前请删除无用事件）
+    //"应用已被启用(Type=1003)",
+    {
+      "name": "应用启用事件", // 事件名称,随意
+      "function": "EnablePlugin", // 事件对应函数,也就是你写在括号里的名字
+      "type": 1003, // 事件类型,请查看事件宏注释的第一行(type =xxx)
+      "priority": 30000, // 事件优先级(参见 cq.im/deveventpriority)
+      "id": 1 // 事件ID
+    },
+    //"应用将被停用(Type=1004)",
+    {
+      "name": "应用停用事件",
+      "function": "DisablePlugin",
+      "type": 1004,
+      "priority": 30000,
+      "id": 2
+    },
+    //"私聊消息(Type=21)",
+    {
+      "name": "处理私聊消息",
+      "function": "HandlePrivateMsg",
+      "type": 21,
+      "priority": 30000,
+      "id": 3
+    },
+    //"群消息(Type=2)",
+    {
+      "name": "处理群聊消息",
+      "function": "HandleGroupMsg",
+      "type": 2,
+      "priority": 30000,
+      "id": 4
+    },
+    //"讨论组消息(Type=4)",
+    {
+      "name": "处理讨论组消息",
+      "function": "HandleDiscussMsg",
+      "type": 4,
+      "priority": 30000,
+      "id": 5
+    },
+    //"群文件上传事件(Type=11)",
+    {
+      "name": "处理群文件上传消息",
+      "function": "HandleGroupFileUploadMsg",
+      "type": 11,
+      "priority": 30000,
+      "id": 6
+    },
+    //"群事件-管理员变动(Type=101)",
+    {
+      "name": "处理群管理员变动消息",
+      "function": "HandleGroupManagerChangeMsg",
+      "type": 101,
+      "priority": 30000,
+      "id": 7
+    },
+    //"群事件-群成员减少(Type=102)",
+    {
+      "name": "处理群成员减少消息",
+      "function": "HandleGroupMemberDecreaseMsg",
+      "type": 102,
+      "priority": 30000,
+      "id": 8
+    },
+    //"群事件-群成员增加(Type=103)",
+    {
+      "name": "处理群成员增加消息",
+      "function": "HandleGroupMemberIncreaseMsg",
+      "type": 103,
+      "priority": 30000,
+      "id": 9
+    },
+    //"好友事件-好友已添加(Type=201)",
+    {
+      "name": "处理好友已添加消息",
+      "function": "HandleFriendAddedMsg",
+      "type": 201,
+      "priority": 30000,
+      "id": 10
+    },
+    //"请求-好友添加(Type=301)",
+    {
+      "name": "处理请求好友添加消息",
+      "function": "HandleRequestAddFriendMsg",
+      "type": 301,
+      "priority": 30000,
+      "id": 11
+    },
+    //"请求-群添加(Type=302)",
+    {
+      "name": "处理请求群添加消息",
+      "function": "HandleRequestAddGroupMsg",
+      "type": 302,
+      "priority": 30000,
+      "id": 12
+    }
+  ],
+  "menu": [
+    // 设置菜单（发布前请删除无用菜单，如果无需设置菜单请全部删除）
+    {
+      "name": "参数设置", //菜单名称
+      "function": "menuFuncSet" //菜单对应函数
+    }
+  ],
+  "status": [
+    // 悬浮窗状态（见 com.example.status 样例）
+
+  ],
+  "auth": [ // 应用权限（发布前请删除无用权限）
+    //20,  //[敏感]取Cookies	getCookies / getCsrfToken
+    //30,  //接收语音			getRecord
+    101, //发送群消息			sendGroupMsg
+    103, //发送讨论组消息		sendDiscussMsg
+    106, //发送私聊消息		sendPrivateMsg
+    110, //发送赞				sendLike
+    120, //置群员移除			setGroupKick
+    121, //置群员禁言			setGroupBan
+    122, //置群管理员			setGroupAdmin
+    123, //置全群禁言			setGroupWholeBan
+    124, //置匿名群员禁言		setGroupAnonymousBan
+    125, //置群匿名设置		setGroupAnonymous
+    126, //置群成员名片		setGroupCard
+    //127, //[敏感]置群退出		setGroupLeave
+    128, //置群成员专属头衔	setGroupSpecialTitle
+    130, //取群成员信息		getGroupMemberInfoV2 / getGroupMemberInfo
+    131, //取陌生人信息		getStrangerInfo
+    140, //置讨论组退出		setDiscussLeave
+    150, //置好友添加请求		setFriendAddRequest
+    151, //置群添加请求		setGroupAddRequest
+    160, //取群成员列表		getGroupMemberList
+    161, //取群列表			getGroupList
+    180 //撤回消息			deleteMsg
+  ]
+}
