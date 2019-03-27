@@ -31,22 +31,23 @@
 ## 如何使用QTool插件
 ## QTool主要功能
 ### QQ群管理：
-![入群检测](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/%E5%85%A5%E7%BE%A4%E6%A3%80%E6%B5%8B.png)
-![踢违规成员](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/%E8%B8%A2%E8%BF%9D%E8%A7%84%E6%88%90%E5%91%98.png)
-![踢重复成员](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/%E8%B8%A2%E9%87%8D%E5%A4%8D%E6%88%90%E5%91%98.png)
+![入群检测](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_in_check.png)
+![踢违规成员](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_tick_foul_member.png)
+![踢重复成员](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_tick_repeat_member.png)
 ### QQ好友管理：
 敬请期待......
 ### 黑白名单管理：
-![白名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/%E7%99%BD%E5%90%8D%E5%8D%95.png)
-![黑名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/%E9%BB%91%E5%90%8D%E5%8D%95.png)
+![白名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/white_list_page.png)
+![黑名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/black_list_page.png)
 ### 机器人管理：
-![机器人](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/%E6%9C%BA%E5%99%A8%E4%BA%BA.png)
+![机器人](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/robot_page.png)
 
 ## 入群检测功能使用要点
 ### 1.设置开启群
 #### 单个操作：选中行，移动鼠标到是否开启列，点击，选择修改。
 #### 批量操作：查询，移动鼠标到全开按钮，点击，则自动开启所有查询并显示行的群。
-### 2.设置开启群的最大群成员数量，有200/500/1000/2000共四档，默认为500人。选中行，移动鼠标到最大数量列，点击，选择修改。
+### 2.设置开启群的最大群成员数量
+#### 有200/500/1000/2000共四档，默认为500人一档。选中行，移动鼠标到最大数量列，点击，选择修改。
 #### 理论上当前群成员数量应小于等于最大群成员数量。
 #### 若群降级了才有可能出现当前群成员数量应大于等于最大群成员数量的情况。
 ### 3.自动通过入群申请的条件
@@ -107,6 +108,8 @@
 #### 没有知识库的就手工添加知识库。
 ### 4.竹间机器人的官网网址
 ### 5.注册并开通竹间机器人
+#### 竹间官网为 http://bf.emotibot.com/enterprise.html#/login
 ### 6.填写竹间机器人的知识库信息：知识库名称和知识库appid。
+![知识库appid](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/emotibot_robot_appid.png)
 ### 7.机器人自动回复测试
 #### 建立qq测试群，加入当前qq号码并设置为管理员，群内其他成员@当前qq号码并加上问题。
