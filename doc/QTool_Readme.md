@@ -31,7 +31,7 @@
 ## 如何使用QTool插件
 ## QTool主要功能
 ### 群配置：
-![群配置] (https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_global_cfg.png)
+![群配置](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_global_cfg.png)
 ### 名单管理：
 ![白名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/white_list_page.png)
 ![黑名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/black_list_page.png)
