@@ -30,17 +30,17 @@
 
 ## 如何使用QTool插件
 ## QTool主要功能
-### QQ群管理：
-![入群检测](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_in_check.png)
-![踢违规成员](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_tick_foul_member.png)
-![踢重复成员](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_tick_repeat_member.png)
-### QQ好友管理：
-敬请期待......
-### 黑白名单管理：
+### 群配置：
+![群配置] (https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_global_cfg.png)
+### 名单管理：
 ![白名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/white_list_page.png)
 ![黑名单](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/black_list_page.png)
-### 机器人管理：
-![机器人](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/robot_page.png)
+### 群管理：
+![自动通过入群](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_in_check.png)
+![踢违规成员](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_tick_foul_member.png)
+![群成员去重](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/group_tick_repeat_member.png)
+### 自动回复：
+![云端自动回复](https://github.com/hulaishun/com.wxb.qqtool/blob/master/doc/images/robot_page.png)
 
 ## 入群检测功能使用要点
 ### 1.设置开启群
